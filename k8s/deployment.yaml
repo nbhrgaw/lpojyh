@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: hurtop
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: hurtop
   template:
     metadata:
       labels:
-        app: ray
+        app: hurtop
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/hurtop:latest
+        name: hurtop
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "1c42cad9-eeaa-4caa-914d-972e20e8bb73"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vl58yt6555"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "1c42cad9-eeaa-4caa-914d-972e20e8bb73"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vm6lkli66"
         - name: Share_Path
           value: "/v2link"
